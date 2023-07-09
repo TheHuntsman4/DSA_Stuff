@@ -1,0 +1,350 @@
+1683998410532	geckodriver	INFO	Listening on 127.0.0.1:47147
+1683998410589	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... te" "--remote-debugging-port" "52851" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileXacCCQ"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1683998411558	Marionette	INFO	Marionette enabled
+1683998411561	Marionette	INFO	Listening on port 36317
+Read port: 36317
+ATTENTION: default value of option mesa_glthread overridden by environment.
+WebDriver BiDi listening on ws://127.0.0.1:52851
+1683998411696	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileXacCCQ/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:52851/devtools/browser/bec9d5a8-94b2-4e3d-b1f9-fbf36ed8300a
+1683998435177	Marionette	INFO	Stopped listening on port 36317
+1683998651581	geckodriver	INFO	Listening on 127.0.0.1:56297
+1683998651622	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... te" "--remote-debugging-port" "36505" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileyWLgGi"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1683998652064	Marionette	INFO	Marionette enabled
+1683998652066	Marionette	INFO	Listening on port 46579
+ATTENTION: default value of option mesa_glthread overridden by environment.
+Read port: 46579
+WebDriver BiDi listening on ws://127.0.0.1:36505
+1683998652164	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileyWLgGi/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:36505/devtools/browser/09a9d41d-8ab8-4151-8e94-3e83d32abd82
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 560: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+1683998695149	Marionette	INFO	Stopped listening on port 46579
+1683998747604	geckodriver	INFO	Listening on 127.0.0.1:43149
+1683998747638	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... te" "--remote-debugging-port" "35795" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileub0BDP"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1683998747940	Marionette	INFO	Marionette enabled
+1683998747943	Marionette	INFO	Listening on port 42889
+ATTENTION: default value of option mesa_glthread overridden by environment.
+WebDriver BiDi listening on ws://127.0.0.1:35795
+Read port: 42889
+1683998748249	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileub0BDP/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:35795/devtools/browser/5fc5836d-bd20-486d-b111-4004fbf6ea3b
+1683998859157	geckodriver	INFO	Listening on 127.0.0.1:55643
+1683998859175	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... te" "--remote-debugging-port" "36283" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileXb3QHk"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1683998859540	Marionette	INFO	Marionette enabled
+1683998859542	Marionette	INFO	Listening on port 34605
+Read port: 34605
+ATTENTION: default value of option mesa_glthread overridden by environment.
+WebDriver BiDi listening on ws://127.0.0.1:36283
+1683998859682	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileXb3QHk/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:36283/devtools/browser/9c802ef0-17e0-47ff-a1f3-6deeadc76fda
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 560: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+1683998863473	Marionette	INFO	Stopped listening on port 42889
+1683998891407	geckodriver	INFO	Listening on 127.0.0.1:48299
+1683998891446	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... te" "--remote-debugging-port" "32997" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileFD2U9W"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1683998891818	Marionette	INFO	Marionette enabled
+1683998891820	Marionette	INFO	Listening on port 40627
+Read port: 40627
+ATTENTION: default value of option mesa_glthread overridden by environment.
+WebDriver BiDi listening on ws://127.0.0.1:32997
+1683998891925	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileFD2U9W/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:32997/devtools/browser/9f5b99be-fc61-4ef5-b446-dcb2b57c6354
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://aumsam.amrita.edu."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://aumsam.amrita.edu."
+JavaScript warning: https://aumsam.amrita.edu/aums/Jsp/Core_Common/CoreFunctions.js, line 9550: unreachable code after return statement
+JavaScript warning: https://aumsam.amrita.edu/aums/Jsp/Core_Common/CoreFunctions.js, line 9828: unreachable code after return statement
+JavaScript warning: https://aumsam.amrita.edu/aums/Jsp/Core_Common/subModal.js, line 253: unreachable code after return statement
+1683998895644	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1683998900123	Marionette	INFO	Stopped listening on port 40627
+1683998904020	geckodriver	INFO	Listening on 127.0.0.1:51669
+1683998904058	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... te" "--remote-debugging-port" "42037" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileZ0Y2be"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1683998904555	Marionette	INFO	Marionette enabled
+1683998904558	Marionette	INFO	Listening on port 42015
+Read port: 42015
+ATTENTION: default value of option mesa_glthread overridden by environment.
+WebDriver BiDi listening on ws://127.0.0.1:42037
+1683998904627	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileZ0Y2be/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:42037/devtools/browser/2237e0f5-fc00-43cb-89da-5ef5074bc7f2
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://aumsam.amrita.edu."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://aumsam.amrita.edu."
+JavaScript warning: https://aumsam.amrita.edu/aums/Jsp/Core_Common/CoreFunctions.js, line 9550: unreachable code after return statement
+JavaScript warning: https://aumsam.amrita.edu/aums/Jsp/Core_Common/CoreFunctions.js, line 9828: unreachable code after return statement
+JavaScript warning: https://aumsam.amrita.edu/aums/Jsp/Core_Common/subModal.js, line 253: unreachable code after return statement
+1683998907966	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1683998912494	Marionette	INFO	Stopped listening on port 42015
+1683998930268	geckodriver	INFO	Listening on 127.0.0.1:60159
+1683998930285	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... te" "--remote-debugging-port" "38387" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofilexZz0vs"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1683998930612	Marionette	INFO	Marionette enabled
+1683998930614	Marionette	INFO	Listening on port 38479
+ATTENTION: default value of option mesa_glthread overridden by environment.
+Read port: 38479
+WebDriver BiDi listening on ws://127.0.0.1:38387
+1683998930722	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilexZz0vs/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:38387/devtools/browser/2cb8af3f-6bf9-4bfd-bf96-93e4bbecc87b
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://aumsam.amrita.edu."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://aumsam.amrita.edu."
+JavaScript warning: https://aumsam.amrita.edu/aums/Jsp/Core_Common/CoreFunctions.js, line 9550: unreachable code after return statement
+JavaScript warning: https://aumsam.amrita.edu/aums/Jsp/Core_Common/CoreFunctions.js, line 9828: unreachable code after return statement
+JavaScript warning: https://aumsam.amrita.edu/aums/Jsp/Core_Common/subModal.js, line 253: unreachable code after return statement
+1683998933873	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1683998943328	Marionette	INFO	Stopped listening on port 38479
+Sandbox: Unexpected EOF, op 0 flags 00 path /proc/cpuinfo
+1683999110879	geckodriver	INFO	Listening on 127.0.0.1:57521
+1683999111435	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... te" "--remote-debugging-port" "49739" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofile8UpzD7"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1683999111758	Marionette	INFO	Marionette enabled
+1683999111760	Marionette	INFO	Listening on port 40513
+ATTENTION: default value of option mesa_glthread overridden by environment.
+Read port: 40513
+WebDriver BiDi listening on ws://127.0.0.1:49739
+1683999111878	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile8UpzD7/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:49739/devtools/browser/fd46f4d8-24bd-4811-b968-43797c1f8aa3
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://aumsam.amrita.edu."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://aumsam.amrita.edu."
+JavaScript warning: https://aumsam.amrita.edu/aums/Jsp/Core_Common/CoreFunctions.js, line 9550: unreachable code after return statement
+JavaScript warning: https://aumsam.amrita.edu/aums/Jsp/Core_Common/CoreFunctions.js, line 9828: unreachable code after return statement
+JavaScript warning: https://aumsam.amrita.edu/aums/Jsp/Core_Common/subModal.js, line 253: unreachable code after return statement
+1683999114859	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript error: https://aumsam.amrita.edu/rubrics-service/webcomponents/sakai-rubrics-helpers.js, line 7: Error: Unauthorized
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://aumsam.amrita.edu."
+JavaScript warning: https://aumsam.amrita.edu/aums/Jsp/Core_Common/CoreFunctions.js, line 9550: unreachable code after return statement
+JavaScript warning: https://aumsam.amrita.edu/aums/Jsp/Core_Common/CoreFunctions.js, line 9828: unreachable code after return statement
+JavaScript warning: https://aumsam.amrita.edu/aums/Jsp/Core_Common/subModal.js, line 253: unreachable code after return statement
+[GFX1-]: Unrecognized feature ACCELERATED_CANVAS2D
+1683999389583	addons.xpi	ERROR	System addon update list error Error: Failed downloading XML, status: 0, reason: timeout
+[GFX1-]: Unrecognized feature ACCELERATED_CANVAS2D
+1683999551678	geckodriver	INFO	Listening on 127.0.0.1:56487
+1683999551718	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... te" "--remote-debugging-port" "39199" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileQtoZtv"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1683999552185	Marionette	INFO	Marionette enabled
+1683999552187	Marionette	INFO	Listening on port 45253
+ATTENTION: default value of option mesa_glthread overridden by environment.
+Read port: 45253
+WebDriver BiDi listening on ws://127.0.0.1:39199
+1683999552315	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileQtoZtv/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:39199/devtools/browser/71144387-032b-49d3-81ca-f9e8de357a18
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://aumsam.amrita.edu."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://aumsam.amrita.edu."
+JavaScript warning: https://aumsam.amrita.edu/aums/Jsp/Core_Common/CoreFunctions.js, line 9550: unreachable code after return statement
+JavaScript warning: https://aumsam.amrita.edu/aums/Jsp/Core_Common/CoreFunctions.js, line 9828: unreachable code after return statement
+JavaScript warning: https://aumsam.amrita.edu/aums/Jsp/Core_Common/subModal.js, line 253: unreachable code after return statement
+1683999556331	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1683999561825	Marionette	INFO	Stopped listening on port 45253
+1683999565938	geckodriver::marionette	ERROR	Failed to close browser connection: Socket not connected (os error 107)
+1683999567810	Marionette	INFO	Stopped listening on port 40513
+Sandbox: Unexpected EOF, op 0 flags 00 path /proc/cpuinfo
+1683999737205	Marionette	INFO	Stopped listening on port 34605
+Sandbox: Unexpected EOF, op 0 flags 00 path /proc/cpuinfo
+1684091171922	geckodriver	INFO	Listening on 127.0.0.1:49587
+1684091172469	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... te" "--remote-debugging-port" "51313" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofile1RoGb4"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1684091172806	Marionette	INFO	Marionette enabled
+1684091172808	Marionette	INFO	Listening on port 40511
+Read port: 40511
+ATTENTION: default value of option mesa_glthread overridden by environment.
+WebDriver BiDi listening on ws://127.0.0.1:51313
+1684091172942	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile1RoGb4/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:51313/devtools/browser/06a2650f-e79b-408f-baba-28c310cb18c3
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://aumsam.amrita.edu."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://aumsam.amrita.edu."
+JavaScript warning: https://aumsam.amrita.edu/aums/Jsp/Core_Common/CoreFunctions.js, line 9550: unreachable code after return statement
+JavaScript warning: https://aumsam.amrita.edu/aums/Jsp/Core_Common/CoreFunctions.js, line 9828: unreachable code after return statement
+JavaScript warning: https://aumsam.amrita.edu/aums/Jsp/Core_Common/subModal.js, line 253: unreachable code after return statement
+1684091175993	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1684091181875	Marionette	INFO	Stopped listening on port 40511
+Sandbox: Unexpected EOF, op 0 flags 00 path /proc/cpuinfo
+1684091185542	geckodriver::marionette	ERROR	Failed to close browser connection: Socket not connected (os error 107)
+1684091185727	geckodriver	INFO	Listening on 127.0.0.1:43197
+1684091185765	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... te" "--remote-debugging-port" "57911" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileMBkADc"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1684091186064	Marionette	INFO	Marionette enabled
+1684091186066	Marionette	INFO	Listening on port 35505
+ATTENTION: default value of option mesa_glthread overridden by environment.
+Read port: 35505
+WebDriver BiDi listening on ws://127.0.0.1:57911
+1684091186193	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileMBkADc/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:57911/devtools/browser/b51752b2-e076-4ddc-a33c-5b9b80f0dd63
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://aumsam.amrita.edu."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://aumsam.amrita.edu."
+JavaScript warning: https://aumsam.amrita.edu/aums/Jsp/Core_Common/CoreFunctions.js, line 9550: unreachable code after return statement
+JavaScript warning: https://aumsam.amrita.edu/aums/Jsp/Core_Common/CoreFunctions.js, line 9828: unreachable code after return statement
+JavaScript warning: https://aumsam.amrita.edu/aums/Jsp/Core_Common/subModal.js, line 253: unreachable code after return statement
+1684091188798	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1684091196698	Marionette	INFO	Stopped listening on port 35505
+Sandbox: Unexpected EOF, op 0 flags 00 path /proc/cpuinfo
+1684091198449	geckodriver::marionette	ERROR	Failed to close browser connection: Socket not connected (os error 107)
+1684138401800	geckodriver	INFO	Listening on 127.0.0.1:58127
+1684138402354	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... te" "--remote-debugging-port" "47609" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileoxRJ6a"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1684138402691	Marionette	INFO	Marionette enabled
+1684138402693	Marionette	INFO	Listening on port 38641
+ATTENTION: default value of option mesa_glthread overridden by environment.
+Read port: 38641
+WebDriver BiDi listening on ws://127.0.0.1:47609
+1684138402813	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileoxRJ6a/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:47609/devtools/browser/44c6f02e-9560-4b4a-90a0-6755d8f305ef
+1684138413580	Marionette	INFO	Stopped listening on port 38641
+1684138420617	geckodriver	INFO	Listening on 127.0.0.1:42891
+1684138420634	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... te" "--remote-debugging-port" "33755" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofilep5JYcR"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1684138420933	Marionette	INFO	Marionette enabled
+1684138420935	Marionette	INFO	Listening on port 38047
+ATTENTION: default value of option mesa_glthread overridden by environment.
+WebDriver BiDi listening on ws://127.0.0.1:33755
+Read port: 38047
+1684138421112	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilep5JYcR/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:33755/devtools/browser/9e5e6151-0850-40e9-9a01-0625c69141e2
+console.error: Region.sys.mjs: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.sys.mjs", 764))
+console.error: Region.sys.mjs: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.sys.mjs", 416))
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://aumsam.amrita.edu."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://aumsam.amrita.edu."
+JavaScript warning: https://aumsam.amrita.edu/aums/Jsp/Core_Common/CoreFunctions.js, line 9550: unreachable code after return statement
+JavaScript warning: https://aumsam.amrita.edu/aums/Jsp/Core_Common/CoreFunctions.js, line 9828: unreachable code after return statement
+JavaScript warning: https://aumsam.amrita.edu/aums/Jsp/Core_Common/subModal.js, line 253: unreachable code after return statement
+1684138428975	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1684138435978	Marionette	INFO	Stopped listening on port 38047
+WARNING: A blocker encountered an error while we were waiting.
+          Blocker:  Waiting for ping task
+          Phase: TelemetryController: Waiting for pending ping activity
+          State: (none)
+WARNING: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+WARNING: addBlocker@resource://gre/modules/AsyncShutdown.jsm:703:15
+addBlocker@resource://gre/modules/AsyncShutdown.jsm:511:26
+addBlocker@resource://gre/modules/AsyncShutdown.jsm:450:15
+setupShutdown@resource://gre/modules/osfile/osfile_async_front.jsm:1563:28
+@resource://gre/modules/osfile/osfile_async_front.jsm:1583:16
+@resource://gre/modules/osfile.jsm:12:30
+@resource://gre/modules/TelemetryStorage.jsm:19:28
+promiseArchivePing@resource://gre/modules/TelemetryArchive.jsm:103:5
+promiseArchivePing@resource://gre/modules/TelemetryArchive.jsm:63:33
+_submitPingLogic@resource://gre/modules/TelemetryControllerParent.jsm:540:48
+send@resource://gre/modules/TelemetryControllerParent.jsm:628:24
+submitExternalPing@resource://gre/modules/TelemetryControllerParent.jsm:182:17
+sendPing@resource://gre/modules/EventPing.jsm:51:30
+_submitPing@resource://gre/modules/EventPing.jsm:229:12
+shutdown@resource://gre/modules/EventPing.jsm:112:10
+_cleanupOnShutdown@resource://gre/modules/TelemetryControllerParent.jsm:940:31
+shutdown/<@resource://gre/modules/TelemetryControllerParent.jsm:1010:24
+observe@resource://gre/modules/AsyncShutdown.jsm:560:16
+
+WARNING: A blocker encountered an error while we were waiting.
+          Blocker:  Waiting for ping task
+          Phase: TelemetryController: Waiting for pending ping activity
+          State: (none)
+WARNING: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+WARNING: addBlocker@resource://gre/modules/AsyncShutdown.jsm:703:15
+addBlocker@resource://gre/modules/AsyncShutdown.jsm:511:26
+addBlocker@resource://gre/modules/AsyncShutdown.jsm:450:15
+setupShutdown@resource://gre/modules/osfile/osfile_async_front.jsm:1563:28
+@resource://gre/modules/osfile/osfile_async_front.jsm:1583:16
+@resource://gre/modules/osfile.jsm:12:30
+@resource://gre/modules/TelemetryStorage.jsm:19:28
+promiseArchivePing@resource://gre/modules/TelemetryArchive.jsm:103:5
+promiseArchivePing@resource://gre/modules/TelemetryArchive.jsm:63:33
+_submitPingLogic@resource://gre/modules/TelemetryControllerParent.jsm:540:48
+send@resource://gre/modules/TelemetryControllerParent.jsm:628:24
+submitExternalPing@resource://gre/modules/TelemetryControllerParent.jsm:182:17
+saveShutdownPings@resource://gre/modules/TelemetrySession.jsm:982:34
+shutdownChromeProcess/cleanup/<@resource://gre/modules/TelemetrySession.jsm:1232:20
+cleanup@resource://gre/modules/TelemetrySession.jsm:1239:9
+shutdownChromeProcess@resource://gre/modules/TelemetrySession.jsm:1256:14
+shutdown@resource://gre/modules/TelemetrySession.jsm:247:17
+_cleanupOnShutdown@resource://gre/modules/TelemetryControllerParent.jsm:959:35
+observe@resource://gre/modules/AsyncShutdown.jsm:560:16
+
+WARNING: A blocker encountered an error while we were waiting.
+          Blocker:  Waiting for ping task
+          Phase: TelemetryController: Waiting for pending ping activity
+          State: (none)
+WARNING: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+WARNING: addBlocker@resource://gre/modules/AsyncShutdown.jsm:703:15
+addBlocker@resource://gre/modules/AsyncShutdown.jsm:511:26
+addBlocker@resource://gre/modules/AsyncShutdown.jsm:450:15
+setupShutdown@resource://gre/modules/osfile/osfile_async_front.jsm:1563:28
+@resource://gre/modules/osfile/osfile_async_front.jsm:1583:16
+@resource://gre/modules/osfile.jsm:12:30
+@resource://gre/modules/TelemetryStorage.jsm:19:28
+promiseArchivePing@resource://gre/modules/TelemetryArchive.jsm:103:5
+promiseArchivePing@resource://gre/modules/TelemetryArchive.jsm:63:33
+_submitPingLogic@resource://gre/modules/TelemetryControllerParent.jsm:540:48
+send@resource://gre/modules/TelemetryControllerParent.jsm:628:24
+submitExternalPing@resource://gre/modules/TelemetryControllerParent.jsm:182:17
+saveShutdownPings@resource://gre/modules/TelemetrySession.jsm:1014:36
+shutdownChromeProcess/cleanup/<@resource://gre/modules/TelemetrySession.jsm:1232:20
+cleanup@resource://gre/modules/TelemetrySession.jsm:1239:9
+shutdownChromeProcess@resource://gre/modules/TelemetrySession.jsm:1256:14
+shutdown@resource://gre/modules/TelemetrySession.jsm:247:17
+_cleanupOnShutdown@resource://gre/modules/TelemetryControllerParent.jsm:959:35
+observe@resource://gre/modules/AsyncShutdown.jsm:560:16
+
+WARNING: A blocker encountered an error while we were waiting.
+          Blocker:  TelemetryController: shutting down
+          Phase: profile-before-change-telemetry
+          State: Error getting state: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange" at addBlocker@resource://gre/modules/AsyncShutdown.jsm:703:15
+addBlocker@resource://gre/modules/AsyncShutdown.jsm:511:26
+addBlocker@resource://gre/modules/AsyncShutdown.jsm:450:15
+setupShutdown@resource://gre/modules/osfile/osfile_async_front.jsm:1563:28
+@resource://gre/modules/osfile/osfile_async_front.jsm:1583:16
+@resource://gre/modules/osfile.jsm:12:30
+@resource://gre/modules/TelemetryStorage.jsm:19:28
+getShutdownState@resource://gre/modules/TelemetrySend.jsm:1687:7
+getShutdownState@resource://gre/modules/TelemetrySend.jsm:369:30
+_getState@resource://gre/modules/TelemetryControllerParent.jsm:1058:38
+setupTelemetry/<@resource://gre/modules/TelemetryControllerParent.jsm:917:18
+safeGetState@resource://gre/modules/AsyncShutdown.jsm:242:17
+Barrier/addBlocker/promise<@resource://gre/modules/AsyncShutdown.jsm:751:20
+observe@resource://gre/modules/AsyncShutdown.jsm:560:16
+
+WARNING: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+WARNING: addBlocker@resource://gre/modules/AsyncShutdown.jsm:703:15
+addBlocker@resource://gre/modules/AsyncShutdown.jsm:511:26
+addBlocker@resource://gre/modules/AsyncShutdown.jsm:450:15
+setupShutdown@resource://gre/modules/osfile/osfile_async_front.jsm:1563:28
+@resource://gre/modules/osfile/osfile_async_front.jsm:1583:16
+@resource://gre/modules/osfile.jsm:12:30
+@resource://gre/modules/TelemetryStorage.jsm:19:28
+removeAbortedSessionPing@resource://gre/modules/TelemetryControllerParent.jsm:721:5
+removeAbortedSessionPing@resource://gre/modules/TelemetryControllerParent.jsm:249:17
+shutdownChromeProcess/cleanup/<@resource://gre/modules/TelemetrySession.jsm:1235:42
+observe@resource://gre/modules/AsyncShutdown.jsm:560:16
+
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 703: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 703: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 703: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 703: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 703: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 703: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+Sandbox: Unexpected EOF, op 0 flags 00 path /proc/cpuinfo
+1684138437946	geckodriver::marionette	ERROR	Failed to close browser connection: Socket not connected (os error 107)

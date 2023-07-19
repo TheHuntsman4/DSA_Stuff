@@ -93,23 +93,23 @@ double evaluatePrefix(char *expression) {
                 num = num * 10 + (expression[i] - '0');
                 i--;
             }
-            i++; 
+            i++;
             push(&stack, num);
         } else if (expression[i] != ' ') {
             operand1 = pop(&stack);
             operand2 = pop(&stack);
             switch (expression[i]) {
                 case '+':
-                    push(&stack, operand1 + operand2);
+                    push(&stack, operand2 + operand1);
                     break;
                 case '-':
-                    push(&stack, operand1 - operand2);
+                    push(&stack, operand2 - operand1);
                     break;
                 case '*':
-                    push(&stack, operand1 * operand2);
+                    push(&stack, operand2 * operand1);
                     break;
                 case '/':
-                    push(&stack, operand1 / operand2);
+                    push(&stack, operand2 / operand1);
                     break;
                 default:
                     printf("Invalid operator!\n");
@@ -138,15 +138,18 @@ int main() {
             case 1:
                 printf("Enter a postfix expression: ");
                 scanf(" %[^\n]", expression);
-                printf("%lf\n", evaluatePostfix(expression));
+                printf("Result: %lf\n", evaluatePostfix(expression));
                 break;
             case 2:
                 printf("Enter a prefix expression: ");
                 scanf(" %[^\n]", expression);
-                printf("%lf\n", evaluatePrefix(expression));
+                printf("Result: %lf\n", evaluatePrefix(expression));
                 break;
+            case 3:
+                printf("Exiting...\n");
+                exit(0);
             default:
-                printf("Invalid operator");
+                printf("Invalid operator\n");
                 break;
         }
     }

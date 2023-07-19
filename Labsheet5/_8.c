@@ -74,17 +74,51 @@ void displayStacks() {
 }
 
 int main() {
-    push1(1);
-    push2(2);
-    push1(3);
-    push2(4);
+    int choice, stackNum, value;
     
-    displayStacks();
-    
-    printf("Popped %d from the first stack\n", pop1());
-    printf("Popped %d from the second stack\n", pop2());
-    
-    displayStacks();
-    
-    return 0;
+    while (true) {
+        printf("\nStack Operations\n");
+        printf("1. Push to Stack 1\n");
+        printf("2. Push to Stack 2\n");
+        printf("3. Pop from Stack 1\n");
+        printf("4. Pop from Stack 2\n");
+        printf("5. Display Stacks\n");
+        printf("0. Exit\n");
+        
+        printf("Enter your choice: ");
+        scanf("%d", &choice);
+        
+        switch (choice) {
+            case 0:
+                printf("Exiting the program\n");
+                return 0;
+            case 1:
+                printf("Enter the value to push: ");
+                scanf("%d", &value);
+                push1(value);
+                break;
+            case 2:
+                printf("Enter the value to push: ");
+                scanf("%d", &value);
+                push2(value);
+                break;
+            case 3:
+                value = pop1();
+                if (value != -1) {
+                    printf("Popped %d from the first stack\n", value);
+                }
+                break;
+            case 4:
+                value = pop2();
+                if (value != -1) {
+                    printf("Popped %d from the second stack\n", value);
+                }
+                break;
+            case 5:
+                displayStacks();
+                break;
+            default:
+                printf("Invalid choice\n");
+        }
+    }
 }

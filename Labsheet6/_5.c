@@ -5,39 +5,39 @@
 #define MAX_SIZE 100
 
 struct Stack {
-    int arr[MAX_SIZE];
+    int elements[MAX_SIZE];
     int top;
 };
 
-void initStack(struct Stack* stack) {
+void init_stack(struct Stack* stack) {
     stack->top = -1;
 }
 
-bool isStackEmpty(struct Stack* stack) {
+bool is_stack_empty(struct Stack* stack) {
     return stack->top == -1;
 }
 
-bool isStackFull(struct Stack* stack) {
+bool is_stack_full(struct Stack* stack) {
     return stack->top == MAX_SIZE - 1;
 }
 
 void push(struct Stack* stack, int data) {
-    if (isStackFull(stack)) {
+    if (is_stack_full(stack)) {
         printf("Stack overflow. Push operation failed.\n");
         return;
     }
 
     stack->top++;
-    stack->arr[stack->top] = data;
+    stack->elements[stack->top] = data;
 }
 
 int pop(struct Stack* stack) {
-    if (isStackEmpty(stack)) {
+    if (is_stack_empty(stack)) {
         printf("Stack underflow. Pop operation failed.\n");
         return -1;
     }
 
-    int data = stack->arr[stack->top];
+    int data = stack->elements[stack->top];
     stack->top--;
     return data;
 }
@@ -47,17 +47,17 @@ struct Queue {
     struct Stack stack2;
 };
 
-void initQueue(struct Queue* queue) {
-    initStack(&(queue->stack1));
-    initStack(&(queue->stack2));
+void init_queue(struct Queue* queue) {
+    init_stack(&(queue->stack1));
+    init_stack(&(queue->stack2));
 }
 
-bool isQueueEmpty(struct Queue* queue) {
-    return isStackEmpty(&(queue->stack1)) && isStackEmpty(&(queue->stack2));
+bool is_queue_empty(struct Queue* queue) {
+    return is_stack_empty(&(queue->stack1)) && is_stack_empty(&(queue->stack2));
 }
 
 void enqueue(struct Queue* queue, int data) {
-    if (isStackFull(&(queue->stack1))) {
+    if (is_stack_full(&(queue->stack1))) {
         printf("Queue is full. Enqueue operation failed.\n");
         return;
     }
@@ -66,13 +66,13 @@ void enqueue(struct Queue* queue, int data) {
 }
 
 int dequeue(struct Queue* queue) {
-    if (isQueueEmpty(queue)) {
+    if (is_queue_empty(queue)) {
         printf("Queue is empty. Dequeue operation failed.\n");
         return -1;
     }
 
-    if (isStackEmpty(&(queue->stack2))) {
-        while (!isStackEmpty(&(queue->stack1))) {
+    if (is_stack_empty(&(queue->stack2))) {
+        while (!is_stack_empty(&(queue->stack1))) {
             int data = pop(&(queue->stack1));
             push(&(queue->stack2), data);
         }
@@ -81,21 +81,61 @@ int dequeue(struct Queue* queue) {
     return pop(&(queue->stack2));
 }
 
+void display_queue(struct Queue* queue) {
+    printf("Queue elements: ");
+    struct Stack* s1 = &(queue->stack1);
+    struct Stack* s2 = &(queue->stack2);
+
+    for (int i = s2->top; i >= 0; i--) {
+        printf("%d ", s2->elements[i]);
+    }
+
+    for (int i = 0; i <= s1->top; i++) {
+        printf("%d ", s1->elements[i]);
+    }
+
+    printf("\n");
+}
+
 int main() {
     struct Queue queue;
-    initQueue(&queue);
+    init_queue(&queue);
 
-    enqueue(&queue, 10);
-    enqueue(&queue, 20);
-    enqueue(&queue, 30);
+    int choice, data;
 
-    printf("Dequeued element: %d\n", dequeue(&queue));
+    while (1) {
+        printf("\nQueue Menu\n");
+        printf("1. Enqueue\n");
+        printf("2. Dequeue\n");
+        printf("3. Display Queue\n");
+        printf("4. Exit\n");
+        printf("Enter your choice: ");
+        scanf("%d", &choice);
 
-    enqueue(&queue, 40);
-
-    printf("Dequeued element: %d\n", dequeue(&queue));
-    printf("Dequeued element: %d\n", dequeue(&queue));
-    printf("Dequeued element: %d\n", dequeue(&queue));
+        switch (choice) {
+            case 1:
+                printf("Enter the data to enqueue: ");
+                scanf("%d", &data);
+                enqueue(&queue, data);
+                break;
+            case 2:
+                data = dequeue(&queue);
+                if (data != -1)
+                    printf("Dequeued element: %d\n", data);
+                break;
+            case 3:
+                display_queue(&queue);
+                break;
+            case 4:
+                printf("Exiting the program.\n");
+                exit(0);
+            default:
+                printf("Invalid choice. Please try again.\n");
+        }
+    }
 
     return 0;
 }
+
+
+

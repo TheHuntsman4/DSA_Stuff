@@ -1,0 +1,97 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+struct node {
+    int data;
+    struct node* left;
+    struct node* right;
+};
+
+struct node* create_node(int data) {
+    struct node* new_node = (struct node*)malloc(sizeof(struct node));
+    new_node->data = data;
+    new_node->left = NULL;
+    new_node->right = NULL;
+
+    return new_node;
+}
+
+void insert_node(struct node** root, int data) {
+    if (*root == NULL) {
+        *root = create_node(data);
+        return;
+    }
+
+    if (data < (*root)->data) {
+        insert_node(&((*root)->left), data);
+    } else {
+        insert_node(&((*root)->right), data);
+    }
+}
+
+void inorder(struct node* root) {
+    if (root == NULL) {
+        return;
+    }
+
+    inorder(root->left);
+    printf("%d ", root->data);
+    inorder(root->right);
+}
+
+int tree_height(struct node* root) {
+    if (root == NULL) {
+        return -1;
+    }
+
+    int left_height = tree_height(root->left);
+    int right_height = tree_height(root->right);
+
+    return (left_height > right_height) ? left_height + 1 : right_height + 1;
+}
+
+int main() {
+    struct node* root = NULL;
+
+    while (1) {
+        printf("1. Insert a node. \n");
+        printf("2. Inorder traversal. \n");
+        printf("3. Height of the tree. \n");
+        printf("4. Exit. \n");
+
+        int choice;
+        printf("enter your choice: ");
+        scanf("%d", &choice);
+
+        switch (choice) {
+            case 1:
+                printf("enter data to be inserted: ");
+                int data;
+                scanf("%d", &data);
+                insert_node(&root, data);
+                break;
+
+            case 2:
+                printf("Inorder Traversal of the Tree: ");
+                inorder(root);
+                printf("\n");
+                break;
+
+            case 3:
+                {
+                    int height = tree_height(root);
+                    printf("The height of the tree = %d\n", height);
+                }
+                break;
+
+            case 4:
+                exit(0);
+                break;
+
+            default:
+                printf("enter a valid choice !!!\n");
+                break;
+        }
+    }
+    return 0;
+}

@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 struct CircularQueue {
-    int* elements;
+    int* data;
     int capacity;
     int front;
     int rear;
@@ -11,7 +11,7 @@ struct CircularQueue {
 struct CircularQueue* createCircularQueue(int capacity) {
     struct CircularQueue* cq = (struct CircularQueue*)malloc(sizeof(struct CircularQueue));
     cq->capacity = capacity;
-    cq->elements = (int*)malloc(cq->capacity * sizeof(int));
+    cq->data = (int*)malloc(cq->capacity * sizeof(int));
     cq->front = cq->rear = -1;
     return cq;
 }
@@ -24,7 +24,7 @@ int is_full(struct CircularQueue* cq) {
     return (cq->rear + 1) % cq->capacity == cq->front;
 }
 
-void enqueue(struct CircularQueue* cq, int data) {
+void enqueue(struct CircularQueue* cq, int value) {
     if (is_full(cq)) {
         printf("Queue is full. Enqueue operation failed.\n");
         return;
@@ -34,8 +34,8 @@ void enqueue(struct CircularQueue* cq, int data) {
         cq->front = 0;
 
     cq->rear = (cq->rear + 1) % cq->capacity;
-    cq->elements[cq->rear] = data;
-    printf("%d enqueued to the queue.\n", data);
+    cq->data[cq->rear] = value;
+    printf("%d enqueued to the queue.\n", value);
 }
 
 int dequeue(struct CircularQueue* cq) {
@@ -44,13 +44,13 @@ int dequeue(struct CircularQueue* cq) {
         return -1;
     }
 
-    int data = cq->elements[cq->front];
+    int value = cq->data[cq->front];
     if (cq->front == cq->rear)
         cq->front = cq->rear = -1;
     else
         cq->front = (cq->front + 1) % cq->capacity;
 
-    return data;
+    return value;
 }
 
 void display(struct CircularQueue* cq) {
@@ -62,31 +62,10 @@ void display(struct CircularQueue* cq) {
     int i = cq->front;
     printf("Queue elements: ");
     do {
-        printf("%d ", cq->elements[i]);
+        printf("%d ", cq->data[i]);
         i = (i + 1) % cq->capacity;
     } while (i != (cq->rear + 1) % cq->capacity);
     printf("\n");
-}
-
-void splitQueue(struct CircularQueue* cq, struct CircularQueue* oddQueue, struct CircularQueue* evenQueue) {
-    int index = cq->front;
-    int position = 1; // To keep track of the position of the element
-
-    while (index != cq->rear) {
-        if (position % 2 == 1)
-            enqueue(oddQueue, cq->elements[index]);
-        else
-            enqueue(evenQueue, cq->elements[index]);
-
-        index = (index + 1) % cq->capacity;
-        position++;
-    }
-
-    // Enqueue the last element (rear) in the appropriate queue
-    if (position % 2 == 1)
-        enqueue(oddQueue, cq->elements[index]);
-    else
-        enqueue(evenQueue, cq->elements[index]);
 }
 
 int getMinElement(struct CircularQueue* cq) {
@@ -95,12 +74,12 @@ int getMinElement(struct CircularQueue* cq) {
         return -1;
     }
 
-    int minElement = cq->elements[cq->front];
+    int minElement = cq->data[cq->front];
     int index = (cq->front + 1) % cq->capacity;
 
     while (index != (cq->rear + 1) % cq->capacity) {
-        if (cq->elements[index] < minElement)
-            minElement = cq->elements[index];
+        if (cq->data[index] < minElement)
+            minElement = cq->data[index];
 
         index = (index + 1) % cq->capacity;
     }
@@ -108,13 +87,34 @@ int getMinElement(struct CircularQueue* cq) {
     return minElement;
 }
 
+void splitQueue(struct CircularQueue* cq, struct CircularQueue* oddQueue, struct CircularQueue* evenQueue) {
+    int index = cq->front;
+    int position = 1; // To keep track of the position of the element
+
+    while (index != cq->rear) {
+        if (position % 2 == 1)
+            enqueue(oddQueue, cq->data[index]);
+        else
+            enqueue(evenQueue, cq->data[index]);
+
+        index = (index + 1) % cq->capacity;
+        position++;
+    }
+
+    // Enqueue the last element (rear) in the appropriate queue
+    if (position % 2 == 1)
+        enqueue(oddQueue, cq->data[index]);
+    else
+        enqueue(evenQueue, cq->data[index]);
+}
+
 void freeCircularQueue(struct CircularQueue* cq) {
-    free(cq->elements);
+    free(cq->data);
     free(cq);
 }
 
 int main() {
-    int capacity, choice, data;
+    int capacity, choice, value;
     printf("Enter the capacity of the circular queue: ");
     scanf("%d", &capacity);
 
@@ -135,14 +135,14 @@ int main() {
 
         switch (choice) {
             case 1:
-                printf("Enter the data to enqueue: ");
-                scanf("%d", &data);
-                enqueue(cq, data);
+                printf("Enter the value to enqueue: ");
+                scanf("%d", &value);
+                enqueue(cq, value);
                 break;
             case 2:
-                data = dequeue(cq);
-                if (data != -1)
-                    printf("%d dequeued from the queue.\n", data);
+                value = dequeue(cq);
+                if (value != -1)
+                    printf("%d dequeued from the queue.\n", value);
                 break;
             case 3:
                 display(cq);

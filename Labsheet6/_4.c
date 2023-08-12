@@ -5,138 +5,138 @@
 #define MAX_SIZE 5
 
 struct Deque {
-    int arr[MAX_SIZE];
+    int elements[MAX_SIZE];
     int front, rear;
 };
 
 struct Deque* createDeque() {
-    struct Deque* deque = (struct Deque*)malloc(sizeof(struct Deque));
-    deque->front = -1;
-    deque->rear = -1;
-    return deque;
+    struct Deque* dq = (struct Deque*)malloc(sizeof(struct Deque));
+    dq->front = -1;
+    dq->rear = -1;
+    return dq;
 }
 
-bool is_empty(struct Deque* deque) {
-    return deque->front == -1;
+bool is_empty(struct Deque* dq) {
+    return dq->front == -1;
 }
 
-bool is_full(struct Deque* deque) {
-    return (deque->rear + 1) % MAX_SIZE == deque->front;
+bool is_full(struct Deque* dq) {
+    return (dq->rear + 1) % MAX_SIZE == dq->front;
 }
 
-void insertFront(struct Deque* deque, int data) {
-    if (is_full(deque)) {
+void insertFront(struct Deque* dq, int data) {
+    if (is_full(dq)) {
         printf("Deque is full. InsertFront operation failed.\n");
         return;
     }
 
-    if (is_empty(deque)) {
-        deque->front = deque->rear = 0;
+    if (is_empty(dq)) {
+        dq->front = dq->rear = 0;
     } else {
-        deque->front = (deque->front - 1 + MAX_SIZE) % MAX_SIZE;
+        dq->front = (dq->front - 1 + MAX_SIZE) % MAX_SIZE;
     }
 
-    deque->arr[deque->front] = data;
+    dq->elements[dq->front] = data;
     printf("%d inserted at the front of the deque.\n", data);
 }
 
-void insertLast(struct Deque* deque, int data) {
-    if (is_full(deque)) {
+void insertLast(struct Deque* dq, int data) {
+    if (is_full(dq)) {
         printf("Deque is full. InsertLast operation failed.\n");
         return;
     }
 
-    if (is_empty(deque)) {
-        deque->front = deque->rear = 0;
+    if (is_empty(dq)) {
+        dq->front = dq->rear = 0;
     } else {
-        deque->rear = (deque->rear + 1) % MAX_SIZE;
+        dq->rear = (dq->rear + 1) % MAX_SIZE;
     }
 
-    deque->arr[deque->rear] = data;
+    dq->elements[dq->rear] = data;
     printf("%d inserted at the last of the deque.\n", data);
 }
 
-void deleteFront(struct Deque* deque) {
-    if (is_empty(deque)) {
+void deleteFront(struct Deque* dq) {
+    if (is_empty(dq)) {
         printf("Deque is empty. DeleteFront operation failed.\n");
         return;
     }
 
-    int data = deque->arr[deque->front];
-    if (deque->front == deque->rear) {
-        deque->front = deque->rear = -1;
+    int data = dq->elements[dq->front];
+    if (dq->front == dq->rear) {
+        dq->front = dq->rear = -1;
     } else {
-        deque->front = (deque->front + 1) % MAX_SIZE;
+        dq->front = (dq->front + 1) % MAX_SIZE;
     }
 
     printf("%d deleted from the front of the deque.\n", data);
 }
 
-void deleteLast(struct Deque* deque) {
-    if (is_empty(deque)) {
+void deleteLast(struct Deque* dq) {
+    if (is_empty(dq)) {
         printf("Deque is empty. DeleteLast operation failed.\n");
         return;
     }
 
-    int data = deque->arr[deque->rear];
-    if (deque->front == deque->rear) {
-        deque->front = deque->rear = -1;
+    int data = dq->elements[dq->rear];
+    if (dq->front == dq->rear) {
+        dq->front = dq->rear = -1;
     } else {
-        deque->rear = (deque->rear - 1 + MAX_SIZE) % MAX_SIZE;
+        dq->rear = (dq->rear - 1 + MAX_SIZE) % MAX_SIZE;
     }
 
     printf("%d deleted from the last of the deque.\n", data);
 }
 
-int getFront(struct Deque* deque) {
-    if (is_empty(deque)) {
+int getFront(struct Deque* dq) {
+    if (is_empty(dq)) {
         printf("Deque is empty.\n");
         return -1;
     }
 
-    return deque->arr[deque->front];
+    return dq->elements[dq->front];
 }
 
-int getRear(struct Deque* deque) {
-    if (is_empty(deque)) {
+int getRear(struct Deque* dq) {
+    if (is_empty(dq)) {
         printf("Deque is empty.\n");
         return -1;
     }
 
-    return deque->arr[deque->rear];
+    return dq->elements[dq->rear];
 }
 
-void display(struct Deque* deque) {
-    if (is_empty(deque)) {
+void display(struct Deque* dq) {
+    if (is_empty(dq)) {
         printf("Deque is empty.\n");
         return;
     }
 
-    int i = deque->front;
+    int i = dq->front;
     printf("Deque elements: ");
     do {
-        printf("%d ", deque->arr[i]);
+        printf("%d ", dq->elements[i]);
         i = (i + 1) % MAX_SIZE;
-    } while (i != (deque->rear + 1) % MAX_SIZE);
+    } while (i != (dq->rear + 1) % MAX_SIZE);
     printf("\n");
 }
 
 int main() {
-    struct Deque* deque = createDeque();
+    struct Deque* dq = createDeque();
 
-    insertFront(deque, 10);
-    insertLast(deque, 20);
-    insertFront(deque, 30);
-    deleteFront(deque);
-    deleteLast(deque);
-    insertLast(deque, 25);
-    insertFront(deque, 40);
-    insertFront(deque, 50);
+    insertFront(dq, 10);
+    insertLast(dq, 20);
+    insertFront(dq, 30);
+    deleteFront(dq);
+    deleteLast(dq);
+    insertLast(dq, 25);
+    insertFront(dq, 40);
+    insertFront(dq, 50);
 
-    printf("Rear element: %d\n", getRear(deque));
-    printf("Front element: %d\n", getFront(deque));
+    printf("Rear element: %d\n", getRear(dq));
+    printf("Front element: %d\n", getFront(dq));
 
-    display(deque);
+    display(dq);
 
     return 0;
 }
